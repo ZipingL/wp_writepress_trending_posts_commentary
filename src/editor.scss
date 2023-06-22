@@ -1,0 +1,47 @@
+
+/*main-content*/
+
+.main-content {
+  border-width: 0 1px 0 1px;
+  border-style: solid;
+}
+
+.main-content.no-border {
+  border-width: 0;
+}
+
+.main-content article.first-child h2.post-title,
+.single-header h2.post-title {
+  font-size: var(--title-font-size-big);
+}
+
+.main-content article.second-child h2.post-title {
+  font-size: var(--title-font-size-large);
+}
+
+.main-content article.first-child .post-exerpt p,
+.single-content .single-excerpt p {
+  font-size: var(--exerpt-font-size-big);
+}
+
+.main-content article.second-child .post-exerpt p {
+  font-size: var(--exerpt-font-size-large);
+}
+
+.main-content article .post-exerpt p:last-child {
+  margin-bottom: 0;
+}
+
+.bottom .sidebar-widget {
+  padding: 50px;
+}
+
+.bottom .pl-lg-110 {
+  border-left: 1px solid;
+  height: 100%;
+}
+
+.footer-bottom-area {
+  width: 100%;
+  padding: 0 30px;
+}

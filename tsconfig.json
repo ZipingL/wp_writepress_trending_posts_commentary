@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "lib": ["DOM", "ESNext", "DOM.Iterable"],
+    "skipLibCheck": true,
+    "moduleResolution": "nodenext",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "module": "es6"
+  },
+  "include": ["src/*.tsx", "lib/*.tsx", "src/*.json", "src/*.scss"],
+  "exclude": ["assets/js", "build", "node_modules", "vendor"]
+}

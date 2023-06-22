@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "liulock-reactable/trending-posts-commentary",
+  "version": "0.9.0",
+  "title": "Liulock Reactable Trending Posts Commentary",
+  "category": "common",
+  "icon": "chart-line",
+  "description": "Block with advanced AI Commented Posts Trending List.",
+  "supports": {
+    "html": true
+  },
+  "textdomain": "liulock-reactable",
+  "editorScript": "file:./index.tsx",
+  "editorStyle": "file:./index.css",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "source": "html",
+      "selector": "h3"
+    },
+    "blockId": {
+      "type": "string"
+    }
+  },
+  "style": "file:./style-index.css"
+}
