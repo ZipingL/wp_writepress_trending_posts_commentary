@@ -94,7 +94,7 @@ export const EditorsHelper = () => {
 
       const topPostIds = topPosts.topRows.map((post) => post.id);
       const xhrPosts = new XMLHttpRequest();
-      const url = 'https://awsuni.com/wp-json/wp/v2/posts?include=' + topPostIds.join(',');
+      const url = 'https://awsuni.com/wp-json/wp/v2/augmented/posts?include=' + topPostIds.join(',');
       console.info('Fetching posts data', url);
       xhrPosts.open('GET', url);
       xhrPosts.setRequestHeader('Content-Type', 'application/json');
@@ -474,7 +474,7 @@ export function getPrompt(post_excerpt:string, post_title:string){
   } else {
     let wordcount = 0;
     if ($sentesces.length > 7) {
-      $excerptShortend = $sentesces[8].replace(" \n", "");
+      $excerptShortend = $sentesces?.at(7)?.replace(" \n", "") || $sentesces[0] || ""
     }
   }
 
